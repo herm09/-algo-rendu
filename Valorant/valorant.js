@@ -25,12 +25,12 @@ while (winAttack != 13 || winDefense != 13) {
         let persoMort = duel[Math.floor(Math.random() * duel.length)] //sélectionne un des deux combattants
     
         if (persoMort == duel.attackAleatoire) {
-            mortAttack.push(persoMort) // Ajoute l'attaquant mort à mortAttack
-            attaquants = attaquants.splice(attackAleatoire) // Retire l'attaquant mort de la liste des attaquants
+            mortAttack.push(persoMort) //Ajoute l'attaquant mort à mortAttack
+            attaquants = attaquants.splice(attackAleatoire) //Retire l'attaquant mort de la liste des attaquants
             console.log(mortAttack + ' a été tué.')
         } else { //si c'est un défenseur
-            mortDefense.push(persoMort); // Ajoute le défenseur mort à mortDefense
-            defenseurs = defenseurs.splice(defenseAleatoire) // Retire le défenseur mort de la liste des défenseurs
+            mortDefense.push(persoMort); //Ajoute le défenseur mort à mortDefense
+            defenseurs = defenseurs.splice(defenseAleatoire) //Retire le défenseur mort de la liste des défenseurs
             console.log(mortDefense + ' a été tué.')
         }
 
@@ -54,21 +54,21 @@ while (winAttack != 13 || winDefense != 13) {
 
         if (spike && Math.random() <= 0.7) { //si le spike est amorcé
             mortDefense.push(persoMort.name); // Ajoute le défenseur mort à mortDefense
-            defenseurs = defenseurs.filter(def => def !== persoMort.name) // Retire le défenseur mort de la liste des défenseurs
+            defenseurs = defenseurs.filter(def => def !== persoMort.name) //Retire le défenseur mort de la liste des défenseurs
             console.log(mortDefense + ' a été tué.')
         } else {
-            mortAttack.push(persoMort.nom) // Ajoute l'attaquant mort à mortAttack
-            attaquants = attaquants.filter(att => att !== persoMort.nom) // Retire l'attaquant mort de la liste des attaquants
+            mortAttack.push(persoMort.nom) //Ajoute l'attaquant mort à mortAttack
+            attaquants = attaquants.filter(att => att !== persoMort.nom) //Retire l'attaquant mort de la liste des attaquants
             console.log(mortAttack + ' a été tué.')
         }
 
         if (spike === false && Math.random() <= 0.5) {
-            mortDefense.push(persoMort.name); // Ajoute le défenseur mort à mortDefense
-            defenseurs = defenseurs.filter(def => def !== persoMort.name) // Retire le défenseur mort de la liste des défenseurs
+            mortDefense.push(persoMort.name); //Ajoute le défenseur mort à mortDefense
+            defenseurs = defenseurs.filter(def => def !== persoMort.name) //Retire le défenseur mort de la liste des défenseurs
             console.log(mortDefense + ' a été tué.')
         } else {
-            mortAttack.push(persoMort.nom) // Ajoute l'attaquant mort à mortAttack
-            attaquants = attaquants.filter(att => att !== persoMort.nom) // Retire l'attaquant mort de la liste des attaquants
+            mortAttack.push(persoMort.nom) //Ajoute l'attaquant mort à mortAttack
+            attaquants = attaquants.filter(att => att !== persoMort.nom) //Retire l'attaquant mort de la liste des attaquants
             console.log(mortAttack + ' a été tué.')
         }
 
