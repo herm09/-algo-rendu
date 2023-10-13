@@ -1,1 +1,1 @@
-test.gitignore
+test.js.gitignore
