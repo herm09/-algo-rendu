@@ -14,7 +14,7 @@ let attackAleatoire = attaquants[Math.floor(Math.random() * attaquants.length)]
 while (winAttack != 13 || winDefense != 13) {
 
     for (let i = 0; i < 1; i++) {
-        duel.push(attackAleatoire, defenseAleatoire);
+        duel.push(attackAleatoire, defenseAleatoire)
         console.log(duel)
         console.log(attackAleatoire + " et " + defenseAleatoire + " se combattent en duel.")
     }
@@ -47,7 +47,7 @@ while (winAttack != 13 || winDefense != 13) {
         }
 
         for (let i = 0; i < 1; i++) {
-            duel.push(attackAleatoire, defenseAleatoire);
+            duel.push(attackAleatoire, defenseAleatoire)
             console.log(duel)
             console.log(attackAleatoire + " et " + defenseAleatoire + " se combattent en duel.")
         }
