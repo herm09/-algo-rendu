@@ -38,7 +38,7 @@ while (winAttack != 13 || winDefense != 13) {
         console.log("Les défenseurs restants sont : " + defenseurs)
 
         
-        if (duel[1].name === defenseAleatoire && Math.random() <= 0.6) {
+        if (duel[1].name === defenseAleatoire && Math.random() <= 0.6) { //si l'index du nom du personnage est le nom d'un défenseur
             spike = true
             console.log("Le spike a été amorcé.")
         } else {
